@@ -1,0 +1,13 @@
+# ===== Java / NetBeans =====
+**/build/
+**/dist/
+**/nbproject/private/
+**/*.class
+
+# ===== React / Node =====
+**/node_modules/
+**/dist/
+
+# ===== Sistema =====
+.DS_Store
+Thumbs.db

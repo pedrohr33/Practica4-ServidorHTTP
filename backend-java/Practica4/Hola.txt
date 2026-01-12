@@ -1,0 +1,63 @@
+Hola
+
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+
+entity RCA_8bits is
+    Port ( 
+        A : in STD_LOGIC_VECTOR (7 downto 0);
+        B : in STD_LOGIC_VECTOR (7 downto 0);
+        Cin : in STD_LOGIC;
+        Sum : out STD_LOGIC_VECTOR (7 downto 0);
+        Cout : out STD_LOGIC
+    );
+end RCA_8bits;
+
+architecture Arquitectura of RCA_8bits is
+    -- Solo necesitamos un cable largo de acarreos (C)
+    -- No hay G ni P aqui
+    signal C : STD_LOGIC_VECTOR (8 downto 0); 
+begin
+
+    -- El primer acarreo es la entrada externa
+    C(0) <= Cin;
+
+    -- AQUI ESTA LA CLAVE DEL RIPPLE CARRY:
+    -- Cada bit necesita esperar al acarreo anterior "C(i)" para calcular el suyo "C(i+1)"
+    
+    -- Bit 0
+    Sum(0) <= A(0) xor B(0) xor C(0);
+    C(1)   <= (A(0) and B(0)) or (C(0) and (A(0) xor B(0)));
+
+    -- Bit 1
+    Sum(1) <= A(1) xor B(1) xor C(1);
+    C(2)   <= (A(1) and B(1)) or (C(1) and (A(1) xor B(1)));
+
+    -- Bit 2
+    Sum(2) <= A(2) xor B(2) xor C(2);
+    C(3)   <= (A(2) and B(2)) or (C(2) and (A(2) xor B(2)));
+
+    -- Bit 3
+    Sum(3) <= A(3) xor B(3) xor C(3);
+    C(4)   <= (A(3) and B(3)) or (C(4) and (A(3) xor B(3)));
+    
+    -- Bit 4
+    Sum(4) <= A(4) xor B(4) xor C(4);
+    C(5)   <= (A(4) and B(4)) or (C(4) and (A(4) xor B(4)));
+
+    -- Bit 5
+    Sum(5) <= A(5) xor B(5) xor C(5);
+    C(6)   <= (A(5) and B(5)) or (C(5) and (A(5) xor B(5)));
+
+    -- Bit 6
+    Sum(6) <= A(6) xor B(6) xor C(6);
+    C(7)   <= (A(6) and B(6)) or (C(6) and (A(6) xor B(6)));
+
+    -- Bit 7
+    Sum(7) <= A(7) xor B(7) xor C(7);
+    C(8)   <= (A(7) and B(7)) or (C(7) and (A(7) xor B(7)));
+
+    -- Salida final
+    Cout <= C(8);
+
+end Arquitectura;

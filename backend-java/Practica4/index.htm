@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sitio de Películas</title>
+    <link rel="stylesheet" type="text/css" href="./estilo/principal.css">
+</head>
+<body class="min-h-screen bg-teal-500 text-white"> 
+    <header class="bg-teal-600 p-4">
+        <nav class="container mx-auto">
+            <ul class="flex justify-between items-center">
+                <li><a href="#accion">Acción</a></li>
+                <li><a href="#fantasia">Fantasía</a></li>
+                <li><a href="#animacion">Animación</a></li>
+                <li><a href="#terror">Terror</a></li>
+                <li><a href="#ciencia-ficcion">Ciencia Ficción</a></li>
+            </ul>
+        </nav>
+    </header>
+
+        <main class="container mx-auto p-4">
+            <section id="intro" class="text-center mb-12">
+                <h1 class="text-4xl md-text-6xl font-bold mb-4">¡Acción!</h1>
+                <p class="text-xl md-text-2xl mb-4">Las Pelis que no puedes perderte</p>
+                <p class="text-lg md-text-xl">
+                    El cine es mucho más que entretenimiento. Es una ventana a otros mundos, capaz de hacernos sentir, soñar y
+                    conectar con historias y personajes inolvidables. Desde risas hasta lágrimas, cada película nos transporta a
+                    un viaje único, uniendo a personas de todos los rincones del planeta. Antes de sumergirnos en mis favoritas,
+                    te invito a explorar este arte que nos permite ver el mundo con nuevos ojos. ¡Comencemos!
+                </p>
+            </section>
+
+            <section id="action" class="movie-details rounded-lg overflow-hidden shadow-lg p-4">
+                <div class="grid grid-cols-1 md-grid-cols-2 gap-8">
+                    <img src="./imagenes/ironman.png" alt="Iron Man" class="w-full h-auto object-cover rounded-lg">
+                    <div>
+                        <h2 class="text-3xl font-bold mb-4">Iron Man</h2>
+                        <p class="mb-4">Tony Stark, un millonario inventor, es secuestrado por terroristas. Con su intelecto y habilidades crea una armadura avanzada para escapar y, más tarde, se convierte en el superhéroe Iron Man.</p>
+                        <p><strong>Año:</strong> 2008</p>
+                        <p><strong>Género:</strong> Acción, Ciencia Ficción</p>
+                        <p><strong>Director:</strong> Jon Favreau</p>
+                        <a href="https://www.youtube.com/watch?v=uzdRdMqPJqI" target="_blank" class="mt-4 inline-block px-4 py-2 bg-red-600 text-white font-bold rounded-lg">
+                            Ver tráiler
+                        </a>
+                    </div>
+                </div>
+                <div class="mt-8">
+                    <h3 class="text-2xl font-bold mb-4">Reparto</h3>
+                    <div class="grid grid-cols-2 md-grid-cols-3 lg-grid-cols-5 gap-4">
+                        <div class="text-center">
+                            <img src="./imagenes/tonyStark.png" alt="Robert Downey Jr" class="w-24 h-24 rounded-full mx-auto mb-2">
+                            <p class="font-bold">Robert Downey Jr</p>
+                            <p class="text-sm">Tony Stark</p>
+                        </div>
+                        <div class="text-center">
+                            <img src="./imagenes/pepperPotts.png" alt="Gwyneth Paltrow" class="w-24 h-24 rounded-full mx-auto mb-2">
+                            <p class="font-bold">Gwyneth Paltrow</p>
+                            <p class="text-sm">Pepper Potts</p>
+                        </div>
+                        <div class="text-center">
+                            <img src="./imagenes/ironMonger.png" alt="Jeff Bridges" class="w-24 h-24 rounded-full mx-auto mb-2">
+                            <p class="font-bold">Jeff Bridges</p>
+                            <p class="text-sm">Iron Monger</p>
+                        </div>
+                        <div class="text-center">
+                            <img src="./imagenes/ironPatriot.png" alt="Terrence Howard" class="w-24 h-24 rounded-full mx-auto mb-2">
+                            <p class="font-bold">Terrence Howard</p>
+                            <p class="text-sm">Iron Patriot</p>
+                        </div>
+                        <div class="text-center">
+                            <img src="./imagenes/happyHogan.png" alt="Jon Favreau" class="w-24 h-24 rounded-full mx-auto mb-2">
+                            <p class="font-bold">Jon Favreau</p>
+                            <p class="text-sm">Happy Hogan</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="fantasia" class="movie-details rounded-lg overflow-hidden shadow-lg p-4">
+                <div class="grid grid-cols-1 md-grid-cols-2 gap-8">
+                    <img src="./imagenes/harryPotterPoster.png" alt="Harry Potter" class="w-full h-auto object-cover rounded-lg">
+                    <div>
+                        <h2 class="text-3xl font-bold mb-4">Harry Potter y la piedra filosofal</h2>
+                        <p class="mb-4">Harry Potter descubre a los 11 años que es un mago y se inscribe en el Colegio Hogwarts de Magia y Hechicería, donde comienza una gran aventura para enfrentar al mago más temido, Lord Voldemort.</p>
+                        <p><strong>Año:</strong> 2001</p>
+                        <p><strong>Género:</strong> Fantasía, Aventura</p>
+                        <p><strong>Director:</strong> Chris Columbus</p>
+                        <a href="https://www.youtube.com/watch?v=tXRXEqd5AhQ" target="_blank" class="mt-4 inline-block px-4 py-2 bg-red-600 text-white font-bold rounded-lg">
+                            Ver tráiler
+                        </a>
+                    </div>
+                </div>
+                <div class="mt-8">
+                    <h3 class="text-2xl font-bold mb-4">Reparto</h3>
+                    <div class="grid grid-cols-2 md-grid-cols-3 lg-grid-cols-5 gap-4">
+                        <div class="text-center">
+                            <img src="./imagenes/harryPotter.png" alt="Daniel Radcliffe" class="w-24 h-24 rounded-full mx-auto mb-2">
+                            <p class="font-bold">Daniel Radcliffe</p>
+                            <p class="text-sm">Harry Potter</p>
+                        </div>
+                        <div class="text-center">
+                            <img src="./imagenes/hermioneGranger.png" alt="Emma Watson" class="w-24 h-24 rounded-full mx-auto mb-2">
+                            <p class="font-bold">Emma Watson</p>
+                            <p class="text-sm">Hermione Granger</p>
+                        </div>
+                        <div class="text-center">
+                            <img src="./imagenes/ronWeasley.png" alt="Rupert Grint" class="w-24 h-24 rounded-full mx-auto mb-2">
+                            <p class="font-bold">Rupert Grint</p>
+                            <p class="text-sm">Ron Weasley</p>
+                        </div>
+                        <div class="text-center">
+                            <img src="./imagenes/albusDumbledore.png" alt="Richard Harris" class="w-24 h-24 rounded-full mx-auto mb-2">
+                            <p class="font-bold">Richard Harris</p>
+                            <p class="text-sm">Albus Dumbledore</p>
+                        </div>
+                        <div class="text-center">
+                            <img src="./imagenes/minervaMcGonagall.png" alt="Maggie Smith" class="w-24 h-24 rounded-full mx-auto mb-2">
+                            <p class="font-bold">Maggie Smith</p>
+                            <p class="text-sm">Minerva McGonagall</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="animacion" class="movie-details rounded-lg overflow-hidden shadow-lg p-4">
+                <div class="grid grid-cols-1 md-grid-cols-2 gap-8">
+                    <img src="./imagenes/rioPoster.png" alt="RIO" class="w-full h-auto object-cover rounded-lg">
+                    <div>
+                        <h2 class="text-3xl font-bold mb-4">Rio</h2>
+                        <p class="mb-4">Blu es un guacamayo domesticado que vive en Minnesota, pero se aventura en un viaje a Brasil para salvar su especie. En Río de Janeiro, descubre el amor y la libertad en una serie de aventuras llenas de música y color.</p>
+                        <p><strong>Año:</strong> 2011</p>
+                        <p><strong>Género:</strong> Animación, Aventura</p>
+                        <p><strong>Director:</strong> Carlos Saldanha</p>
+                        <a href="https://www.youtube.com/watch?v=2yBOcC_8k6U" target="_blank" class="mt-4 inline-block px-4 py-2 bg-red-600 text-white font-bold rounded-lg">
+                            Ver tráiler
+                        </a>
+                    </div>
+                </div>
+                <div class="mt-8">
+                    <h3 class="text-2xl font-bold mb-4">Reparto</h3>
+                    <div class="grid grid-cols-2 md-grid-cols-3 lg-grid-cols-5 gap-4">
+                        <div class="text-center">
+                            <img src="./imagenes/blu.png" alt="Jesse Eisenberg" class="w-24 h-24 rounded-full mx-auto mb-2">
+                            <p class="font-bold">Jesse Eisenberg</p>
+                            <p class="text-sm">Blu</p>
+                        </div>
+                        <div class="text-center">
+                            <img src="./imagenes/perla.png" alt="Anne Hathaway" class="w-24 h-24 rounded-full mx-auto mb-2">
+                            <p class="font-bold">Anne Hathaway</p>
+                            <p class="text-sm">Perla</p>
+                        </div>
+                        <div class="text-center">
+                            <img src="./imagenes/linda.png" alt="Leslie Mann" class="w-24 h-24 rounded-full mx-auto mb-2">
+                            <p class="font-bold">Leslie Mann</p>
+                            <p class="text-sm">Linda</p>
+                        </div>
+                        <div class="text-center">
+                            <img src="./imagenes/pepillo.png" alt="Jemaine Clement" class="w-24 h-24 rounded-full mx-auto mb-2">
+                            <p class="font-bold">Jemaine Clement</p>
+                            <p class="text-sm">Pepillo</p>
+                        </div>
+                        <div class="text-center">
+                            <img src="./imagenes/luis.png" alt="Tracy Morgan" class="w-24 h-24 rounded-full mx-auto mb-2">
+                            <p class="font-bold">Tracy Morgan</p>
+                            <p class="text-sm">Luis</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="terror" class="movie-details rounded-lg overflow-hidden shadow-lg p-4">
+                <div class="grid grid-cols-1 md-grid-cols-2 gap-8">
+                    <img src="./imagenes/elconjuro2Poster.jpg" alt="EL CONJURO 2" class="w-full h-auto object-cover rounded-lg">
+                    <div>
+                        <h2 class="text-3xl font-bold mb-4">El Conjuro 2</h2>
+                        <p class="mb-4">Basada en hechos reales, la película sigue a los investigadores paranormales Ed y Lorraine Warren, quienes viajan a Inglaterra para ayudar a una familia que sufre la presencia de un espíritu maligno en su hogar. La película explora el caso de Enfield, uno de los más famosos de la pareja Warren.</p>
+                        <p><strong>Año:</strong> 2016</p>
+                        <p><strong>Género:</strong> Terror, Suspenso</p>
+                        <p><strong>Director:</strong> James Wan</p>
+                        <a href="https://www.youtube.com/watch?v=cuDBjj_Gs0M" target="_blank" class="mt-4 inline-block px-4 py-2 bg-red-600 text-white font-bold rounded-lg">
+                            Ver tráiler
+                        </a>
+                    </div>
+                </div>
+                <div class="mt-8">
+                    <h3 class="text-2xl font-bold mb-4">Reparto</h3>
+                    <div class="grid grid-cols-2 md-grid-cols-3 lg-grid-cols-5 gap-4">
+                        <div class="text-center">
+                            <img src="./imagenes/lorraineWarren.png" alt="Vera Farmiga" class="w-24 h-24 rounded-full mx-auto mb-2">
+                            <p class="font-bold">Vera Farmiga</p>
+                            <p class="text-sm">Lorraine Warren</p>
+                        </div>
+                        <div class="text-center">
+                            <img src="./imagenes/edWarren.png" alt="Patrick Wilson" class="w-24 h-24 rounded-full mx-auto mb-2">
+                            <p class="font-bold">Patrick Wilson</p>
+                            <p class="text-sm">Ed Warren</p>
+                        </div>
+                        <div class="text-center">
+                            <img src="./imagenes/janetHodgson.png" alt="Madison Wolfe" class="w-24 h-24 rounded-full mx-auto mb-2">
+                            <p class="font-bold">Madison Wolfe</p>
+                            <p class="text-sm">Janet Hodgson</p>
+                        </div>
+                        <div class="text-center">
+                            <img src="./imagenes/peggyHodgson.png" alt="Frances O'Connor" class="w-24 h-24 rounded-full mx-auto mb-2">
+                            <p class="font-bold">Frances O'Connor</p>
+                            <p class="text-sm">Peggy Hodgson</p>
+                        </div>
+                        <div class="text-center">
+                            <img src="./imagenes/mauriceGrosse.png" alt="Simon McBurney" class="w-24 h-24 rounded-full mx-auto mb-2">
+                            <p class="font-bold">Simon McBurney</p>
+                            <p class="text-sm">Maurice Grosse</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="ciencia-ficcion" class="movie-details rounded-lg overflow-hidden shadow-lg p-4">
+                <div class="grid grid-cols-1 md-grid-cols-2 gap-8">
+                    <img src="./imagenes/interestelarPoster.jpg" alt="INTERESTELAR" class="w-full h-auto object-cover rounded-lg">
+                    <div>
+                        <h2 class="text-3xl font-bold mb-4">Interestelar</h2>
+                        <p class="mb-4">Interestelar narra la historia de un grupo de exploradores que, en medio de una Tierra agonizante, atraviesan un agujero de gusano en busca de un nuevo hogar para la humanidad. A medida que viajan por el espacio, enfrentan desafíos científicos y emocionales que ponen en riesgo no solo sus vidas, sino también la existencia de la raza humana.</p>
+                        <p><strong>Año:</strong> 2014</p>
+                        <p><strong>Género:</strong> Ciencia ficción, Aventura, Drama</p>
+                        <p><strong>Director:</strong> Christopher Nolan</p>
+                        <a href="https://www.youtube.com/watch?v=LYS2O1nl9iM" target="_blank" class="mt-4 inline-block px-4 py-2 bg-red-600 text-white font-bold rounded-lg">
+                            Ver tráiler
+                        </a>
+                    </div>
+                </div>
+                <div class="mt-8">
+                    <h3 class="text-2xl font-bold mb-4">Reparto</h3>
+                    <div class="grid grid-cols-2 md-grid-cols-3 lg-grid-cols-5 gap-4">
+                        <div class="text-center">
+                            <img src="./imagenes/josephCooper.png" alt="Matthew McConaughey" class="w-24 h-24 rounded-full mx-auto mb-2">
+                            <p class="font-bold">Matthew McConaughey</p>
+                            <p class="text-sm">Joseph Cooper</p>
+                        </div>
+                        <div class="text-center">
+                            <img src="./imagenes/ameliaBrand.png" alt="Anne Hathaway" class="w-24 h-24 rounded-full mx-auto mb-2">
+                            <p class="font-bold">Anne Hathaway</p>
+                            <p class="text-sm">Amelia Brand</p>
+                        </div>
+                        <div class="text-center">
+                            <img src="./imagenes/murph.png" alt="Jessica Chastain" class="w-24 h-24 rounded-full mx-auto mb-2">
+                            <p class="font-bold">Jessica Chastain</p>
+                            <p class="text-sm">Murph</p>
+                        </div>
+                        <div class="text-center">
+                            <img src="./imagenes/profesorBrand.png" alt="Michael Caine" class="w-24 h-24 rounded-full mx-auto mb-2">
+                            <p class="font-bold">Michael Caine</p>
+                            <p class="text-sm">Profesor Brand</p>
+                        </div>
+                        <div class="text-center">
+                            <img src="./imagenes/drMann.png" alt="Matt Damon" class="w-24 h-24 rounded-full mx-auto mb-2">
+                            <p class="font-bold">Matt Damon</p>
+                            <p class="text-sm">Dr. Mann</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+    
+        <footer class="bg-teal-600 p-4 mt-12">
+            <div class="container mx-auto text-center">
+                <p>&copy; Pedro Hernandez Rosario. Todos los derechos reservados.</p>
+            </div>
+        </footer>
+</body>
+</html>
